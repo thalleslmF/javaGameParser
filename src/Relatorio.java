@@ -4,33 +4,30 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import model.Game;
+import model.Jogador;
 import model.ParserArquivo;
 
 public class Relatorio {
 public static void main(String[] args) {
 	ArrayList<Game> games = new ArrayList<>();
-	String linha;
-	ParserArquivo parser = new ParserArquivo();
-	Scanner input = ParserArquivo.abreArquivo();
 	
-	while(input.hasNext()) {
-		int id=0;
-		linha = input.nextLine();
-	    if(linha.contains("InitGame") ) {
-	    	
-	    	Game game = new Game(); 
-	    	
-	    	while(input.hasNext() && !(linha = input.nextLine()).contains("0:00")) {
-	    		game.popularDadosRelatorio(linha);
-	    	}
-	    	game.setId(id);
-	    	id++;
-	    	games.add(game);
-	    	
-	    	System.out.println(game.getTotalMortes());
-	    	System.out.println(game.getJogadores());
-	    }
-	    
+	ParserArquivo parser = new ParserArquivo();
+	Scanner input = ParserArquivo.abrirArquivo();
+	ParserArquivo.lerArquivo(input,games);
+	int i=0;
+	for (Game game : games) {
+		System.out.println("RELATÓRIO JOGO: "+(i+1));
+		System.out.println("\n Total Kills: "+game.getTotalMortes());
+		System.out.println("\n Players: ");
+		for (Jogador jogador : game.getJogadores()) {
+			System.out.println(jogador.getNome());
+		}
+		System.out.println("\n Kills: "+game.getJogadores());
+		i++;
+	}
+		
+	
+	
 	}
 }
-}
+

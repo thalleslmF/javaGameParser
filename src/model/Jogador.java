@@ -32,7 +32,7 @@ public class Jogador {
 	}
 	  @Override
 	    public String toString() { 
-		  return "Nome: "+this.nome+" Mortes: "+this.mortes;
+		  return this.nome+": "+this.mortes ;
 	  }
 	
 }

@@ -84,4 +84,8 @@ public class Game {
 			return false;
 		}
 	}
+	@Override
+	public String toString() {
+		return  this.getJogadores().toString()+"Kills:"+this.totalMortes;
+	}
 }

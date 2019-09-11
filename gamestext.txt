@@ -1,0 +1,10 @@
+20:37 InitGame
+Kill: 2 3 7: Isgalamido killed Mocinha by MOD_ROCKET_SPLASH
+Kill: 2 2 7: Mocinha killed Isgalamido by MOD_ROCKET_SPLASH
+
+Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
+ Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
+Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
+Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
+Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT
+0:00 ------------------------------------------------------------
