@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ParserArquivo {
+	/**
+	 * @author adm
+	 * abre arquivo e retorna leitor do arquivo
+	 */
 	public static Scanner abrirArquivo(){
 		File file = new File("games.log");
 		System.out.println(file);
@@ -19,11 +23,16 @@ public class ParserArquivo {
 		}
 		return input;
 	}
+	/**
+	 * @author adm
+	 * Função para leitura do arquivo e popular o game com os dados 
+	 */
 	public static String lerArquivo(Scanner input, ArrayList<Game> games) {
 		
 		String linha;
+		int id=0;
 		while(input.hasNext()) {
-			int id=0;
+			
 			linha = input.nextLine();
 		    if(linha.contains("InitGame") ){
 		    	

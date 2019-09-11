@@ -20,7 +20,7 @@ class ParserArquivoTest {
 	@Test
 	void testLerArquivo() throws FileNotFoundException   {
 		ArrayList<Game >games  = new ArrayList<Game>();
-		assertEquals("[[Mocinha: 1, Isgalamido: -4]Kills:7]" 
+		assertEquals("[[Mocinha: 1, Isgalamido: -4]Total Kills:7]" 
 		,ParserArquivo.lerArquivo(new Scanner(new File("gamestext.txt")),games));
 	}
 	
